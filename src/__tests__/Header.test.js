@@ -6,6 +6,7 @@ import Header from "../components/Header";
 
 test("displays the text 'hello from the Header!'", () => {
   render(<Header />);
-
+//added line
+screen.debug();
   expect(screen.queryByText("hello from the Header!")).toBeInTheDocument();
 });
